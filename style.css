@@ -1,0 +1,210 @@
+/* this refers to every property and method on every page */
+
+body {
+	font-family: Arial, Helvetica, Helvetica, sans-serif;
+	font-size: 15px;
+  line-height: 50px;
+  background-image: url("../images/lilypads/lilypads.png");
+  color: #777777;
+}
+
+/* * refers to all of the boxes, calculates runtime box size*/
+* {
+	box-sizing: border-box;
+}
+
+/* Footer Box for Page 1 */
+#box1 {
+  min-height: calc(140vh - 410px);
+}
+
+/* Footer Box for Page 2 */
+#box2 {
+  min-height: calc(400vh - 310px);
+}
+
+/* all heading styles */
+
+header {
+	background-color: #fff;
+	margin-bottom: 40px;
+	border-bottom: 2px solid #ccc;
+}
+
+h1 {
+  font-weight: bold;
+	font-family: Georgia, Times, Serif;
+	color: #4aaaa5;
+	text-align: left;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+	font-size: 50px;
+	border-bottom: 2px solid #ccc;
+}
+
+h2 {
+	font-size: 22px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* specific class for name label on all three pages*/
+#namelabel {
+  font-family: Georgia, Times, Serif;
+	font-size: 25px;
+	padding: 0 40px;
+	line-height: 90px;
+	font-weight: bold;
+	float: left;
+	display: block;
+	background-color: #4aaaa5;
+	color:#fff;
+	text-decoration: none;
+}
+
+/* all navs refer to style for labels on top right, all pages */
+nav {
+	float: right;
+}
+
+nav ul {
+	display: block;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 90px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #999;
+	margin-left: 20px;
+	line-height: 22px;
+	padding-left: 20px;
+	border-left: 1px solid #ddd;
+}
+
+nav ul li:first-child a {
+	border-left: 0;
+}
+
+/* formatting class for top right labels */
+.labelsTopRight {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/* formatting class for images background box */
+.professional {
+	background-color: #fff;
+	padding: 30px;
+	border: 1px solid #ddd;
+}
+
+/* formatting id for all page titles (about me, portfolio, contact)*/
+#aboutmeLabel {
+	float: left;
+	width: 960px;
+}
+
+.pic1 {
+	float: left;
+	margin-right: 30px;
+}
+
+/* Portfolio */
+
+.picturelabels {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.picturelabels:nth-child(even) {
+  margin-right: 40px;
+}
+
+.picturelabels img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.picturelabels h3 {
+  font-weight: 300;
+  line-height: 30px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  font-family: Georgia, Times, Serif;
+  font-size: 20px;
+}
+
+/* properties of labels on contact page */
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 25px;
+  font-size: 20px;
+  color: #ffff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+
+
+/* Hover */
+#namelabel:hover,
+input[type=submit]:hover {
+  background: #5e7f7e;
+}
+
+nav a:hover {
+  color: #5e7f7e;
+}
+
+.social:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+footer {
+	text-align: center;
+	background-color: #777;
+	color: #ccc;
+	line-height: 90px;
+	margin-top: 40px;
+	border-top: 8px solid #4aaaa5;
+  font-size: 12px;
+  position: fixed;
+  width: 100%;
+}
